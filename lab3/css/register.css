@@ -1,0 +1,14 @@
+header nav{
+    font-size: 24px;color: deepskyblue;
+}
+header nav:hover{
+    color: orange;
+}
+#operation{
+    margin-left: 500px;
+}
+#register{
+    font-size: 20px;
+}
+section{margin-top: 20px}
+p{font-size: 18px}

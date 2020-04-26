@@ -1,0 +1,60 @@
+header label{color: deepskyblue;font-size: 24px;font-weight: bold}
+section{margin-top: 15px}
+header label:hover{
+    color: orange;
+}
+h4{font-size: 20px;font-weight: bolder;}
+#sidemenu{
+    display: none;
+}
+#sidemenu:checked + aside {
+    left: 0;
+}
+
+#sidemenu:checked ~ #wrap {
+    padding-left: 220px;
+}
+aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+    width: 200px;
+    background: black;
+    transition: 0.2s ease-out;
+}
+#wrap {
+    margin-left: 20px;
+    padding: 10px;
+    transition: 0.2s ease-out;
+}
+#sideMenuControl {
+    background: white;
+    border-radius: 70px;
+    color: orange;
+    cursor: pointer;
+    display: block;
+    font-family: Courier New;
+    font-size: 2em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    display: inline-block;
+}
+
+#sideMenuControl:hover {
+    background: #000;
+}
+#sideul li {
+    list-style: none;
+    color: white;
+    width: 100%;
+    height: 1.8em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#sideul li:hover {
+    color: orange;
+}

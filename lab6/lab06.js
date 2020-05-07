@@ -72,23 +72,27 @@ function testRedundancy(str) {
 
 }
 function testKeyBoard(wantInput, actualInput) {
-var x = 0;
-var array = new Array();
-var wantInput1 = wantInput.toLowerCase();
-var actualInput1 = actualInput.toLowerCase();
-for(var i = 0;i < wantInput.length;i++){
-    if(wantInput1.charAt(i) == actualInput1.charAt(x)){
-        x++;
-    }
-    else{
-        array.push(wantInput1.charAt(i).toUpperCase());
-    }
-}
-var set = new Set(array);
-console.log(set);
+        var x = 0;
+        var array = new Array();
+        var wantInput1 = wantInput.toLowerCase();
+        var actualInput1 = actualInput.toLowerCase();
+        for(var i = 0;i < wantInput.length;i++){
+            if(wantInput1.charAt(i) == actualInput1.charAt(x)){
+                x++;
+            }
+            else{
+                array.push(wantInput1.charAt(i).toUpperCase());
+            }
+        }
+        var set = new Set(array);
 
-}
-
+      var string7 = "Set { ";
+        for(let a of set){
+            string7 = string7 + "\'" + a + "\' ";
+        }
+        string7 += "}";
+        console.log(string7);
+    }
 function testSpecialReverse(str) {
     var str1 = str.trim();
     var array = str1.split(/\s+/);
